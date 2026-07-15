@@ -13,3 +13,8 @@ source = "./modules/create-ws"
 module "create-var-and-varsets"{
 source = "./modules/create-var-and-varsets"
 }
+
+resource "null_resource" "name" {
+  count =2
+}
+

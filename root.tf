@@ -15,6 +15,6 @@ source = "./modules/create-var-and-varsets"
 }
 
 resource "null_resource" "name" {
-  count =2
+  count =3
 }
 

@@ -11,6 +11,7 @@ data "tfe_organization" "tfeorg" {
 data "tfe_oauth_client" "vcs_client" {
 organization = data.tfe_organization.tfeorg.name
 service_provider = "github"
+name = "Github-dryrun"
 }
 output "org_name" {
 value = data.tfe_organization.tfeorg.name
